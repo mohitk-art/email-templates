@@ -11,26 +11,35 @@ style = {
     `,
     body:`
     padding:15px;
-    min-height: 230px;
+    height: 230px;
     `,
     hTitle:`font-family: 'Raleway', sans-serif;
     font-size: 37px;
+    height:auto;
     line-height: normal;
     font-weight: bold;
+    background:none;
+    padding:0;
+    color:#333;
     `,
-    maindiv:`max-width:600px;
+    maindiv:`
+    width:600px;
     margin:auto;
     font-family: Lato, sans-serif;
     font-size: 14px;
     color: #333;
     line-height: 24px;
     font-weight: 300;
-    box-shadow: 0 0 8px 2px #0000002b;
+    border: 1px solid #eaeaea;
     `,
     textPrimary:`color:#3e3a6e;
     `,
     h5:`font-family: Raleway, sans-serif;
     font-size: 22px;
+    background:none;
+    padding:0;
+    color:#333;
+    height:auto;
     font-weight: bold;
     line-height:normal;
     `,
@@ -44,7 +53,6 @@ style = {
     border:0;
     display:inline-block;
     text-decoration:none;
-
     `,
     btnPrimary:`
     background-color:#3e3a6e;
@@ -57,8 +65,7 @@ style = {
     text-align:center;
     background-color:#000;
     `
-}
-
+    }
 
 message += `
 <div class="container" style="`+style.maindiv+`">
@@ -72,7 +79,7 @@ message += `
         Please verify your account by clicking the link below.</p>
 
         <div style="`+style.textCenter+`">
-            <a href="gfg" style="`+style.btn+style.btnPrimary+`">Verify Email</a>
+            <a href="gfg"><span style="`+style.btn+style.btnPrimary+`">Verify Email</span></a>
         </div>
     </div>
     <div class="footer" style="`+style.footer+`">
