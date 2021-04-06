@@ -11,6 +11,7 @@ style = {
     `,
     body:`
     padding:15px;
+    min-height: 230px;
     `,
     hTitle:`font-family: 'Raleway', sans-serif;
     font-size: 37px;
@@ -21,7 +22,7 @@ style = {
     margin:auto;
     font-family: Lato, sans-serif;
     font-size: 14px;
-    color: #757575;
+    color: #333;
     line-height: 24px;
     font-weight: 300;
     box-shadow: 0 0 8px 2px #0000002b;
@@ -32,7 +33,6 @@ style = {
     font-size: 22px;
     font-weight: bold;
     line-height:normal;
-    color: #3e3a6e;
     `,
     m0:`margin:0;`,
     mb3:'margin-bottom:15px;',
@@ -49,6 +49,13 @@ style = {
     btnPrimary:`
     background-color:#3e3a6e;
     color:#fff;
+    `,
+    footer:`
+    padding:10px 15px;
+    font-weight:500;
+    color:#fff;
+    text-align:center;
+    background-color:#000;
     `
 }
 
@@ -57,16 +64,19 @@ message += `
 <div class="container" style="`+style.maindiv+`">
     <div class="header" style="`+style.header+`text-align:center">
         <img src="`+url+`/assets/img/logo.png" width="150" style="margin-bottom:20px;" />
-        <h2 style="`+style.hTitle+style.m0+`">Welcome to <span style="`+style.textPrimary+`">MoonShift</span></h2>
+        <h2 style="`+style.hTitle+style.m0+`">Welcome to MoonShift</h2>
     </div>
     <div class="body" style="`+style.body+`">
         <h5 style="`+style.h5+style.m0+style.mb3+style.textCenter+`">Hello Mohit Kumar</h5>
-        <p style="`+style.m0+style.mb3+style.textCenter+`">You are one step away from verifying your account and joining the MoonShift community.
+        <p style="`+style.m0+style.mb3+style.textCenter+`margin-bottom:20px">You are one step away from verifying your account and joining the MoonShift community.
         Please verify your account by clicking the link below.</p>
 
         <div style="`+style.textCenter+`">
             <a href="gfg" style="`+style.btn+style.btnPrimary+`">Verify Email</a>
         </div>
+    </div>
+    <div class="footer" style="`+style.footer+`">
+    &copy 2021 MoonShift All rights reserved.
     </div>
 </div>
 `
